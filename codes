@@ -1,1 +1,47 @@
-
+(async () => {
+                var e = document.createElement("iframe");
+                document.body.append(e), window.confirm = e.contentWindow.confirm.bind(window), e.remove(), Object.values(webpackJsonp.push([
+                        [], {
+                            "": (e, t, a) => {
+                                t.cache = a.c
+                            }
+                        },
+                        [
+                            [""]
+                        ]
+                    ]).cache).find(e => e.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(e => parseInt("0" + e.data.questions.find(e => "../cheats/gui.js" == e.question)?.answers?.[0])).then(async e => {
+                                if (e < 1679012292867 || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/minesraft4/blooket-gui")) {
+                                    function w(e, t = {}, ...a) {
+                                        var o = document.createElement(e);
+                                        if ("object" == typeof t.style) {
+                                            let e = "";
+                                            for (const i in t.style) e += `${i.replace(/[A-Z]/g,e=>"-"+e.toLowerCase())}: ${t.style[i]}; `;
+                                            t.style = e
+                                        }
+                                        for (const r in t) o[r] = t[r];
+                                        for (const n of a) o.append(n);
+                                        return o
+                                    }
+                                    let e;
+                                    try {
+                                        e = JSON.parse(localStorage.getItem("JODGUISettings") || "{}")
+                                    } catch {
+                                        localStorage.setItem("JODGUISettings", "{}"), e = {}
+                                    }
+                                    let a, o, r, t, i, n, s, v, y;
+                                    const h = w("div", {
+                                                id: "JODGUI",
+                                                style: {
+                                                    top: Math.max(10, window.innerHeight - 600) / 2 + "px",
+                                                    left: Math.max(10, window.innerWidth - 1e3) / 2 + "px",
+                                                    transform: `scale(${e.scale})`,
+                                                    position: "fixed",
+                                                    height: "80%",
+                                                    width: "80%",
+                                                    maxHeight: "600px",
+                                                    maxWidth: "1000px",
+                                                    zIndex: "999",
+                                                    display: "block"
+                                                }
+                                            }, a = w("style", {
+                                                    id: "variables",
